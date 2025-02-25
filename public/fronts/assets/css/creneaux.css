@@ -1,0 +1,102 @@
+/* Reset CSS */
+.creneaux-card-reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour le corps de la page */
+.creneaux-card-container {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.5;
+    padding: 30px 15px; /* Espacement interne augmenté */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh; /* Hauteur minimale augmentée à 30% de la fenêtre */
+}
+
+/* Titre principal */
+.creneaux-card-title {
+    font-size: 22px; /* Taille de police fortement augmentée */
+    font-weight: 700;
+    color: #4F46E5;
+    margin-bottom: 16px; /* Espacement sous le titre augmenté */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Espacement des lettres augmenté */
+}
+
+/* Conteneur de la grille */
+.creneaux-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Largeur des cartes augmentée */
+    gap: 15px; /* Espacement entre les cartes fortement augmenté */
+    width: 100%;
+    max-width: 800px; /* Largeur maximale augmentée */
+    padding: 15px;
+}
+
+/* Carte individuelle */
+.creneaux-card {
+    background-color: #fff;
+    border-radius: 10px; /* Bordures arrondies plus prononcées */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Ombre plus marquée */
+    padding: 20px; /* Espacement interne fortement augmenté */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 160px; /* Largeur minimale augmentée */
+}
+
+.creneaux-card:hover {
+    transform: translateY(-6px); /* Effet de translation plus marqué */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Ombre au survol plus marquée */
+}
+
+/* Heure dans la carte */
+.creneaux-card-time {
+    font-size: 20px; /* Taille de police augmentée */
+    font-weight: 600;
+    color: #4F46E5;
+    margin-bottom: 10px; /* Espacement sous l'heure augmenté */
+}
+
+/* Nombre de réservations */
+.creneaux-card-reservations {
+    font-size: 18px; /* Taille de police augmentée */
+    font-weight: 500;
+    color: #10b981;
+    margin-bottom: 10px; /* Espacement sous les réservations augmenté */
+}
+
+/* Texte descriptif */
+.creneaux-card-text {
+    font-size: 16px; /* Taille de police augmentée */
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .creneaux-card-title {
+        font-size: 20px; /* Taille de police augmentée pour les petits écrans */
+    }
+
+    .creneaux-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Largeur des cartes augmentée */
+    }
+
+    .creneaux-card-time {
+        font-size: 18px; /* Taille de police augmentée pour les petits écrans */
+    }
+
+    .creneaux-card-reservations {
+        font-size: 16px; /* Taille de police augmentée pour les petits écrans */
+    }
+
+    .creneaux-card-text {
+        font-size: 14px; /* Taille de police augmentée pour les petits écrans */
+    }
+}

@@ -1,0 +1,108 @@
+/* Styles spécifiques au tableau des espaces de travail */
+.workspace-table {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.workspace-table h1 {
+    text-align: center;
+    color: #033f7a;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.workspace-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.workspace-table table th,
+.workspace-table table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.workspace-table table th {
+    background-color: #033f7a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.75rem; /* Taille de police ajustée */
+    letter-spacing: 0.5px; /* Espacement des lettres pour un look plus mignon */
+    text-transform: uppercase; /* Texte en majuscules */
+    padding: 15px; /* Padding légèrement augmenté */
+}
+
+.workspace-table table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.workspace-table table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Statuts */
+.workspace-table .status-success {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.workspace-table .status-danger {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.workspace-table .status-warning {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.workspace-table .status-muted {
+    color: #6c757d;
+    font-weight: bold;
+}
+
+/* Boutons */
+.workspace-table .btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin: 2px;
+}
+
+.workspace-table .btn-payer {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.workspace-table .btn-payer:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.workspace-table .btn-annuler {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.workspace-table .btn-annuler:hover {
+    background-color: #a71d2a;
+    transform: translateY(-1px);
+}
+
+/* Texte muet */
+.workspace-table .text-muted {
+    color: #6c757d;
+    font-style: italic;
+}

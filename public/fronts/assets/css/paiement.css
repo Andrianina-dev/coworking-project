@@ -1,0 +1,121 @@
+/* Style général */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Conteneur principal */
+.paiement-container {
+    background: #fff;
+    padding: 20px; /* Padding réduit */
+    border-radius: 12px; /* Bordure plus douce */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre plus légère */
+    max-width: 500px; /* Largeur réduite */
+    width: 100%;
+    margin: 20px;
+}
+
+/* Titre */
+.paiement-container h1 {
+    text-align: center;
+    color: #033f7a;
+    margin-bottom: 15px; /* Espacement réduit */
+    font-size: 1.5rem; /* Taille de police réduite */
+    font-weight: 600;
+}
+
+/* Informations sur la réservation */
+.paiement-container .reservation-info {
+    margin-bottom: 15px; /* Espacement réduit */
+}
+
+.paiement-container .reservation-info p {
+    font-size: 0.9rem; /* Taille de police réduite */
+    color: #555;
+    margin-bottom: 8px; /* Espacement réduit */
+}
+
+.paiement-container .reservation-info b {
+    color: #033f7a;
+    font-weight: 600;
+}
+
+/* Formulaire de paiement */
+.paiement-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacement réduit */
+}
+
+.paiement-container label {
+    font-size: 0.7rem; /* Taille de police réduite */
+    color: #555;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacement réduit */
+}
+
+.paiement-container input[type="text"] {
+    padding: 6px 8px; /* Padding réduit (hauteur diminuée) */
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Bordure plus douce */
+    font-size: 0.9rem; /* Taille de police réduite */
+    color: #333;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 28px; /* Hauteur réduite */
+}
+
+.paiement-container input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3); /* Ombre plus légère */
+}
+
+.paiement-container input[type="submit"] {
+    padding: 8px 12px; /* Padding réduit (bouton plus petit) */
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 6px; /* Bordure plus douce */
+    cursor: pointer;
+    font-size: 0.85rem; /* Taille de police réduite */
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Ombre plus légère */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    height: 36px; /* Hauteur réduite */
+}
+
+.paiement-container input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .paiement-container {
+        padding: 15px; /* Padding réduit */
+    }
+
+    .paiement-container h1 {
+        font-size: 1.3rem; /* Taille de police réduite */
+    }
+
+    .paiement-container .reservation-info p {
+        font-size: 0.85rem; /* Taille de police réduite */
+    }
+
+    .paiement-container input[type="text"],
+    .paiement-container input[type="submit"] {
+        font-size: 0.85rem; /* Taille de police réduite */
+    }
+}

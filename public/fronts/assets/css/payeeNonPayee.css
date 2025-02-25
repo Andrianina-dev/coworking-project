@@ -1,0 +1,139 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Police moderne */
+    background-color: #f8f9fa; /* Gris très clair */
+    color: #333;
+    line-height: 1.4; /* Ligne plus serrée */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 15px; /* Espace autour du contenu réduit */
+}
+
+/* Conteneur principal */
+.custom-container {
+    max-width: 500px; /* Largeur maximale réduite */
+    width: 100%;
+    padding: 20px; /* Padding réduit */
+    background-color: #fff;
+    border-radius: 10px; /* Bordures arrondies légèrement réduites */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    animation: fadeIn 0.5s ease; /* Animation d'apparition */
+}
+
+/* Titre de la page */
+.custom-page-title {
+    font-size: 20px; /* Taille de police réduite */
+    font-weight: 700;
+    color: #4F46E5; /* Bleu moderne */
+    margin-bottom: 15px; /* Espace sous le titre réduit */
+}
+
+/* Formulaire */
+.custom-filter-form {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espace entre les éléments réduit */
+}
+
+.custom-filter-form label {
+    font-size: 14px; /* Taille de police réduite */
+    font-weight: 600;
+    color: #4F46E5; /* Bleu moderne */
+}
+
+.custom-filter-form select {
+    padding: 6px 10px; /* Padding réduit */
+    border: 2px solid #d1d5db; /* Gris clair */
+    border-radius: 6px; /* Bordures arrondies */
+    font-size: 13px; /* Taille de police réduite */
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-filter-form select:hover {
+    border-color: #4F46E5; /* Bleu moderne au survol */
+    box-shadow: 0 0 6px rgba(79, 70, 229, 0.2); /* Ombre légère */
+}
+
+.custom-filter-form input[type="submit"] {
+    padding: 6px 16px; /* Padding réduit */
+    background-color: #4F46E5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px; /* Taille de police réduite */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-filter-form input[type="submit"]:hover {
+    background-color: #4338CA; /* Bleu plus foncé au survol */
+    transform: translateY(-2px); /* Légère élévation */
+}
+
+/* Section des résultats */
+.custom-results-section {
+    margin-top: 15px; /* Espace réduit */
+    text-align: left;
+}
+
+.custom-results-section h2 {
+    font-size: 18px; /* Taille de police réduite */
+    font-weight: 600;
+    color: #4F46E5; /* Bleu moderne */
+    margin-bottom: 12px; /* Espace sous le titre réduit */
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Espace entre l'icône et le texte réduit */
+}
+
+.custom-results-section h2 i {
+    font-size: 20px; /* Taille de l'icône réduite */
+    color: #4F46E5; /* Bleu moderne */
+}
+
+.custom-results-section p {
+    font-size: 14px; /* Taille de police réduite */
+    color: #333;
+    margin-bottom: 8px; /* Espace sous le texte réduit */
+    padding-left: 28px; /* Alignement avec l'icône réduit */
+}
+
+.custom-results-section .amount {
+    font-size: 16px; /* Taille de police réduite */
+    font-weight: 700;
+    color: #10b981; /* Vert pour les montants */
+}
+
+.custom-results-section .no-results {
+    font-size: 14px; /* Taille de police réduite */
+    color: #6b7280; /* Gris foncé */
+    font-style: italic;
+    padding-left: 28px; /* Alignement avec l'icône réduit */
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

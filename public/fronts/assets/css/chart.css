@@ -1,0 +1,116 @@
+/* Styles généraux */
+.chiffre-affaire-container {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chiffre-affaire-container h1 {
+    text-align: center;
+    color: #6a11cb;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+/* Formulaire */
+.chiffre-affaire-container form {
+    margin-bottom: 20px;
+}
+
+.chiffre-affaire-container .form-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chiffre-affaire-container input[type="date"] {
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 12px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.chiffre-affaire-container input[type="date"]:focus {
+    border-color: #6a11cb;
+}
+
+.chiffre-affaire-container button[type="submit"] {
+    padding: 6px 12px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.chiffre-affaire-container button[type="submit"]:hover {
+    background-color: #2575fc;
+}
+
+/* Messages d'erreur et absence de données */
+.error-message, .no-data-message {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.no-data-message {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+/* Tableau des données */
+.data-container {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.data-container th, .data-container td {
+    padding: 8px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.data-container th {
+    background-color: #6a11cb;
+    color: white;
+}
+
+.data-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.data-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Graphique */
+.chart-container {
+    margin-top: 15px;
+    width: 100%;
+    height: 250px; /* Hauteur réduite */
+}

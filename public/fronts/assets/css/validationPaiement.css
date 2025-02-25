@@ -1,0 +1,84 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.new-validation-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f2f2f8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Tableau */
+.new-validation-table {
+    max-width: 800px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.new-validation-table th, .new-validation-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 12px;
+}
+
+.new-validation-table th {
+    background-color: #4F46E5;
+    color: #fff;
+    font-weight: 600;
+}
+
+.new-validation-table tr:hover {
+    background-color: #f3f4f6;
+}
+
+/* Bouton de validation */
+.new-btn-validation {
+    padding: 6px 12px;
+    background-color: #10b981;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.new-btn-validation:hover {
+    background-color: #0d9c6e;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .new-validation-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .new-validation-table th, .new-validation-table td {
+        min-width: 100px;
+    }
+}

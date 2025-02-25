@@ -1,0 +1,154 @@
+/* Style général */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Conteneur principal */
+.reservation-form-container {
+    background: #fff;
+    padding: 15px; /* Padding réduit */
+    border-radius: 12px; /* Bordure plus douce */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre plus légère */
+    width: 100%;
+    max-width: 450px; /* Largeur réduite pour un look plus compact */
+    margin: 20px auto;
+}
+
+/* Titre */
+.reservation-form-container h1 {
+    text-align: center;
+    color: #033f7a;
+    margin-bottom: 10px; /* Espacement réduit */
+    font-size: 1.4rem; /* Taille de police réduite */
+    font-weight: 600;
+}
+
+/* Messages de succès ou d'erreur */
+.reservation-form-container .success-message {
+    color: #28a745;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0; /* Espacement réduit */
+    font-size: 0.9rem; /* Taille de police réduite */
+}
+
+.reservation-form-container .error-message {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0; /* Espacement réduit */
+    font-size: 0.9rem; /* Taille de police réduite */
+}
+
+/* Formulaire */
+.reservation-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espacement réduit entre les éléments */
+}
+
+/* Labels */
+.reservation-form-container label {
+    font-weight: bold;
+    font-size: 0.85rem; /* Taille de police réduite */
+    color: #555;
+    margin-bottom: 4px; /* Espacement réduit */
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Espacement réduit */
+}
+
+/* Icônes pour les labels */
+.reservation-form-container label i {
+    font-size: 0.9rem; /* Taille d'icône réduite */
+    color: #007bff;
+}
+
+/* Champs de formulaire */
+.reservation-form-container input[type="date"],
+.reservation-form-container select {
+    padding: 6px; /* Padding réduit */
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Bordure plus douce */
+    font-size: 0.85rem; /* Taille de police réduite */
+    background: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-bottom: 6px; /* Espacement réduit */
+}
+
+.reservation-form-container input[type="date"]:focus,
+.reservation-form-container select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3); /* Ombre plus légère */
+}
+
+/* Options */
+.reservation-form-container .options-container {
+    margin-bottom: 12px; /* Espacement réduit */
+}
+
+.reservation-form-container .options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    gap: 6px; /* Espacement réduit entre les éléments */
+}
+
+.reservation-form-container .options-grid div {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* Espacement réduit */
+}
+
+.reservation-form-container .options-grid input[type="checkbox"] {
+    margin-right: 4px; /* Espacement réduit */
+    accent-color: #007bff; /* Couleur personnalisée pour les cases à cocher */
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.reservation-form-container .options-grid input[type="checkbox"]:hover {
+    transform: scale(1.2);
+}
+
+/* Bouton */
+.reservation-form-container button {
+    padding: 8px 12px; /* Padding réduit */
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 6px; /* Bordure plus douce */
+    cursor: pointer;
+    font-size: 0.85rem; /* Taille de police réduite */
+    font-weight: bold;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Ombre plus légère */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    margin-top: 8px; /* Espacement réduit */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; /* Espacement réduit */
+}
+
+.reservation-form-container button i {
+    font-size: 0.9rem; /* Taille d'icône réduite */
+}
+
+.reservation-form-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reservation-form-container .options-grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    }
+}

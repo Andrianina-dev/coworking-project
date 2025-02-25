@@ -1,0 +1,98 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Police moderne */
+    background-color: #f8f9fa; /* Gris très clair */
+    color: #333;
+    line-height: 1.4; /* Ligne plus serrée */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 8px; /* Espace autour du contenu encore réduit */
+}
+
+/* Conteneur principal */
+.options-container {
+    max-width: 550px; /* Largeur maximale encore réduite */
+    width: 100%;
+    padding: 12px; /* Padding encore réduit */
+    background-color: #fff;
+    border-radius: 6px; /* Bordures arrondies encore réduites */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    animation: fadeIn 0.5s ease; /* Animation d'apparition */
+}
+
+.options-container h1 {
+    font-size: 18px; /* Taille de police encore réduite */
+    font-weight: 700;
+    color: #4F46E5; /* Bleu moderne */
+    margin-bottom: 12px; /* Espace sous le titre encore réduit */
+}
+
+/* Grille pour les options */
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Grille responsive avec largeur encore réduite */
+    gap: 8px; /* Espace entre les cartes encore réduit */
+}
+
+/* Carte pour chaque option */
+.option-card {
+    background-color: #fff;
+    border-radius: 6px; /* Bordures arrondies encore réduites */
+    padding: 10px; /* Padding encore réduit */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.option-card:hover {
+    transform: translateY(-2px); /* Légère élévation encore réduite */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée */
+}
+
+.option-card h2 {
+    font-size: 14px; /* Taille de police encore réduite */
+    font-weight: 600;
+    color: #4F46E5; /* Bleu moderne */
+    margin-bottom: 4px; /* Espace sous le titre encore réduit */
+}
+
+.option-card p {
+    font-size: 12px; /* Taille de police encore réduite */
+    color: #6b7280; /* Gris foncé */
+    margin-bottom: 6px; /* Espace sous le texte encore réduit */
+}
+
+.option-card .price {
+    font-size: 13px; /* Taille de police encore réduite */
+    font-weight: 700;
+    color: #10b981; /* Vert pour le prix */
+}
+
+/* Icône */
+.option-card .icon {
+    font-size: 16px; /* Taille de l'icône encore réduite */
+    color: #4F46E5; /* Bleu moderne */
+    margin-bottom: 4px; /* Espace sous l'icône encore réduit */
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
