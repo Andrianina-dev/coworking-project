@@ -17,7 +17,7 @@ SELECT
     reservation.dates
 FROM reservation
 JOIN clientcoworker
-    ON clientcoworker.`idClient` = reservation.`idClient`
+    ON clientCoworker.`idClient` = reservation.`idClient`
 JOIN espacetravail
     ON espacetravail.`idEspaceTravail` = reservation.`idespaceTravail`
 JOIN statuts
@@ -158,12 +158,12 @@ DELIMITER $$
 
 -- TOP CRENEAUX
 -- heure debut seulementn
-create or replace view topcreneaux as
-SELECT heureDebut, COUNT(*) AS nombreReservations
-        FROM reservation
-        GROUP BY heureDebut
-        ORDER BY nombreReservations DESC
-        LIMIT 3;
+-- create or replace view topcreneaux as
+-- SELECT heureDebut, COUNT(*) AS nombreReservations
+--         FROM reservation
+--         GROUP BY heureDebut
+--         ORDER BY nombreReservations DESC
+--         LIMIT 3;
 
 CREATE TABLE nombres (heure INT);
 
