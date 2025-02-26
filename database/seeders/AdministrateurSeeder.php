@@ -14,7 +14,7 @@ class AdministrateurSeeder extends Seeder
     {
         DB::table('administrateur')->insert([
             'nomAdministrateur' => 'admin',
-            'motdepasse' => 'password123',
+            'motdepasse' => 'admin',
         ]);
     }
 }
