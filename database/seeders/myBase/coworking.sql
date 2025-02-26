@@ -187,11 +187,4 @@ ALTER TABLE optionreservation MODIFY refReservation VARCHAR(255);
 ALTER TABLE attentepaiement MODIFY idReservation VARCHAR(255);
 
 
-
-create table jourFerie
-(
-    idJourFerie int,
-    dateFerie
-);
-
 select * from reservation where dates>='2025-02-11' and dates<='2025-04-12';
