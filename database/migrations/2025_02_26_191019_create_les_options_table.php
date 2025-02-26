@@ -15,6 +15,7 @@ return new class extends Migration
             $table->string('nomOption', 30); // Nom de l'option
             $table->double('prixOption'); // Prix de l'option
             $table->timestamps(); // Colonnes `created_at` et `updated_at`
+            $table->unsignedBigInteger('idlesOptions')->nullable(); // Autoriser NULL
         });
     }
 

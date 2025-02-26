@@ -255,3 +255,10 @@ INSERT INTO jourFeries (mois, jour) VALUES
 (03, 29),   -- Jour de l'an (1er janvier)
 (06, 26);   -- Jour de l'an (1er janvier)
 -- Ajoutez d'autres jours fériés ici si nécessaire
+
+
+
+
+php artisan migrate:rollback --path=database/migrations/2025_02_26_191019_create_les_options_table.php
+
+php artisan migrate --path=database/migrations/2025_02_26_191019_create_les_options_table.php
