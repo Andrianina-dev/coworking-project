@@ -62,19 +62,18 @@ create table reservation
 );
 
 
-DELIMITER //
+-- DELIMITER
 
-CREATE TRIGGER before_insert_reservation
-BEFORE INSERT ON reservation
-FOR EACH ROW
-BEGIN
-    IF NEW.idClientConnectez IS NULL THEN
-        SET NEW.idClientConnectez = NEW.idClient;
-    END IF;
-END;
-//
+-- CREATE TRIGGER before_insert_reservation
+-- BEFORE INSERT ON reservation
+-- FOR EACH ROW
+-- BEGIN
+--     IF NEW.idClientConnectez IS NULL THEN
+--         SET NEW.idClientConnectez = NEW.idClient;
+--     END IF;
+-- END;
 
-DELIMITER ;
+-- DELIMITER ;
 
 -- TABLE OPTIONS
 

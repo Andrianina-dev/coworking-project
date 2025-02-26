@@ -87,12 +87,12 @@ LEFT JOIN lesoptions ON lesoptions.`idlesOptions` = optr.`idlesOptions`;
 
 
 --
-create or REPLACE view resaPerson as
+-- create or REPLACE view resaPerson as
 
-SELECT *
-FROM getEspaceTravailbyDateView
-WHERE `dates` = '2025-02-11'
-  AND `idClient` != `idclientConnectez`;
+-- SELECT *
+-- FROM getEspaceTravailbyDateView
+-- WHERE `dates` = '2025-02-11'
+--   AND `idClient` != `idclientConnectez`;
 
 select * from getespacetravailbydateview;
 
