@@ -262,3 +262,38 @@ INSERT INTO jourFeries (mois, jour) VALUES
 php artisan migrate:rollback --path=database/migrations/2025_02_26_191019_create_les_options_table.php
 
 php artisan migrate --path=database/migrations/2025_02_26_191019_create_les_options_table.php
+
+
+-- code migrations
+-- <?php
+
+-- use Illuminate\Database\Migrations\Migration;
+-- use Illuminate\Database\Schema\Blueprint;
+-- use Illuminate\Support\Facades\Schema;
+
+-- return new class extends Migration
+-- {
+--     public function up(): void
+--     {
+--         Schema::create('optionReservation', function (Blueprint $table) {
+--             $table->id('idOptionReservation'); // Clé primaire auto-incrémentée
+--             $table->string('refReservation', 255); // Clé étrangère vers reservation(idReservation)
+--             $table->unsignedBigInteger('idlesOptions'); // Clé étrangère vers lesOptions(idlesOptions)
+
+--             // Clés étrangères
+--             $table->foreign('refReservation')->references('idReservation')->on('reservation')->onDelete('cascade');
+--             $table->foreign('idlesOptions')->references('idlesOptions')->on('lesOptions')->onDelete('cascade');
+--             $table->unsignedBigInteger('idlesOptions')->nullable();
+--             $table->timestamps(); // Colonnes `created_at` et `updated_at`
+--         });
+--     }
+
+--     /**
+--      * Reverse the migrations.
+--      */
+--     public function down(): void
+--     {
+--         Schema::dropIfExists('optionReservation');
+--     }
+
+-- };

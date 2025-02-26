@@ -6,12 +6,15 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    /**
+     * Run the migrations.
+     */
     public function up(): void
     {
         Schema::create('optionReservation', function (Blueprint $table) {
             $table->id('idOptionReservation'); // Clé primaire auto-incrémentée
             $table->string('refReservation', 255); // Clé étrangère vers reservation(idReservation)
-            $table->unsignedBigInteger('idlesOptions'); // Clé étrangère vers lesOptions(idlesOptions)
+            $table->unsignedBigInteger('idlesOptions')->nullable(); // Clé étrangère vers lesOptions(idlesOptions), nullable
 
             // Clés étrangères
             $table->foreign('refReservation')->references('idReservation')->on('reservation')->onDelete('cascade');
@@ -28,5 +31,4 @@ return new class extends Migration
     {
         Schema::dropIfExists('optionReservation');
     }
-
 };

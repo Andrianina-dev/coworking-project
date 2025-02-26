@@ -12,7 +12,7 @@ class DropTable extends Command
      *
      * @var string
      */
-    protected $signature = 'reservation:drop {table : Le nom de la table à supprimer}';
+    protected $signature = 'optionReservation:drop {table : Le nom de la table à supprimer}';
 
     /**
      * The console command description.
