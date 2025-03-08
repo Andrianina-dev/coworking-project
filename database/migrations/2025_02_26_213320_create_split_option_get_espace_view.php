@@ -64,7 +64,7 @@ GROUP BY
     ebr.id_status,
     ebr.`nomStatut`,
     ebr.`heureDebut`,
-    ebr.`heureFin`,
+    ebr.`heureFin`, 
     ebr.duree,
     ebr.dates;
 
